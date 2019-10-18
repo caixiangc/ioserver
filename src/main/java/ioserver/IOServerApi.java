@@ -9,11 +9,6 @@ import com.sun.jna.WString;
 
 import java.util.*;
 
-/**
- * @Author: 蔡翔
- * @Date: 2019/8/19 9:05
- * @Version 1.0
- */
 public class IOServerApi {
 
     IOServerAPICilent client = new IOServerAPICilent();

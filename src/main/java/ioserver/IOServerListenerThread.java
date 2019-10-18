@@ -4,13 +4,7 @@ import com.sun.jna.WString;
 
 import java.util.Date;
 
-/**
- * @Author: 蔡翔
- * @Date: 2019/9/9 19:20
- * @Version 1.0
- *
- *
- */
+
 public class IOServerListenerThread extends Thread{
     private static Object temp = null;
     private static boolean flag = false;

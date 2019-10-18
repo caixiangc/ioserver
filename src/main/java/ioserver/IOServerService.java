@@ -13,11 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-/**
- * @Author: 蔡翔
- * @Date: 2019/8/28 15:31
- * @Version 1.0
- */
+
 public class IOServerService {
     private static final Logger logger = LoggerFactory.getLogger(IOServerService.class);
 
