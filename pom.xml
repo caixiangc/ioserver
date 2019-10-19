@@ -3,13 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <!-- 注意这里的groupID 就是你申请审核的 id -->
+    <!-- Kleopatra 一定要用这个指定证书，不然你是在 https://oss.sonatype.org 找不到你的项目。 -->
+    <!-- 注意这里的groupID 就是你申请审核的 id （这里是 cn.cxnei） -->
+    <!--<version>1.2.4</version> 如果一次没改成功跟这里要改版本号，版本号是必填的。不然 repository显示不出  -->
+    <!-- 如果报错No public key: Key with id: (c6828802fb4ecc55) was not able to be located on <a href="http://pool.sks-keyservers.net:11371/"> -->
+    <!-- 就不能gpg "-"-keyserver hkp://pool.sks-keyservers.net "-"-recv-keys 3E8F3F39D87E0D8F96FCE699C6828802FB4ECC55 -->
+    <!-- 需要 gpg “-”-keyserver hkp://pool.sks-keyservers.net:11371 “-”-recv-keys 3E8F3F39D87E0D8F96FCE699C6828802FB4ECC55-->
     <groupId>cn.cxnei</groupId>
     <artifactId>qgs-ioserver-java</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.2.5</version>
 
-
+    <url>http://www.cxnei.cn/</url>
     <name>qgsIOServer</name>
     <description>IOServer-plc-java</description>
     <properties>
@@ -127,12 +131,12 @@
             <distributionManagement>
                 <snapshotRepository>
                     <!-- 注意这里的id 一定要和全局的maven setting.xml  server里面的id一致 -->
-                    <id>osscxcx</id>
+                    <id>osscx</id>
                     <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
                 </snapshotRepository>
                 <repository>
                     <!-- 注意这里的id 一定要和全局的maven setting.xml  server里面的id一致 -->
-                    <id>osscxcx</id>
+                    <id>osscx</id>
                     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
